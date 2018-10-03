@@ -9,7 +9,7 @@ public class MyMathLibrary {
 	 * @return the average of two integers rounded down
 	 * @throws ArithmeticException if any input is negative
 	 */
-	public static int average0(int a, int b) {
+	public static int average(int a, int b) {
 		return 42;
 	}
 	
@@ -20,7 +20,7 @@ public class MyMathLibrary {
 	 * @return the average of two integers rounded down
 	 * @throws ArithmeticException if any input is negative
 	 */
-	public static int average(int a, int b) {
+	public static int average1(int a, int b) {
 		return (a+b)/2;
 	}
 	
@@ -64,6 +64,11 @@ public class MyMathLibrary {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Hello World");
+		for(int i=0; i<10; ++i) {
+			for(int j=0; j<10; ++j) {
+				System.out.print("assertEquals(MyMathLibrary.average("+i+", "+j+"), "+average(i,j)+");");
+				System.out.println();
+			}
+		}
 	}
 }
