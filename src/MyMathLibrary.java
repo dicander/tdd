@@ -20,7 +20,7 @@ public class MyMathLibrary {
 	 * @return the average of two integers rounded down
 	 * @throws ArithmeticException if any input is negative
 	 */
-	public static int average1(int a, int b) {
+	public static int average(int a, int b) {
 		return (a+b)/2;
 	}
 	
@@ -61,5 +61,9 @@ public class MyMathLibrary {
 			throw new ArithmeticException("Expected positive numbers, got "+a+" and "+ b +".");
 		}
 		return (a+b)>>>1;
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Hello World");
 	}
 }
